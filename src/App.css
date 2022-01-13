@@ -21,6 +21,14 @@ h3 {
   font-size: 2em;
 }
 
-p {
+p,
+span {
   color: #9e9baf;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+}
+
+button {
+  cursor: pointer;
 }

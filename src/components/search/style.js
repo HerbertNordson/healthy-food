@@ -25,10 +25,12 @@ export const Srch = styled.div`
   }
 
   @media (max-width: 780px) {
+    display: block;
     width: 100%;
-    margin-left: 0;
     bottom: 0;
     padding: 1em;
+    margin-top: 40em;
+    margin-left: 0;
 
     & h1 {
       font-size: 2.6em;

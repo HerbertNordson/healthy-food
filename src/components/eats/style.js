@@ -6,6 +6,10 @@ export const Eats = styled.div`
   flex-wrap: wrap;
   padding: 2em 0 0;
 
+  @media (max-width: 780px) {
+    padding: 2em 1em 0;
+  }
+
   & article {
     display: flex;
     border-radius: 12px;
@@ -31,6 +35,27 @@ export const Eats = styled.div`
         color: #fff;
         border-radius: 8px;
         font-size: 1.2em;
+      }
+    }
+
+    @media (max-width: 780px) {
+      height: auto;
+
+      & > img {
+        width: 50%;
+      }
+
+      & > div {
+        padding: 1em;
+
+        & > h3 {
+          width: auto;
+          font-size: 1.2em;
+        }
+
+        & > a {
+          font-size: 1em;
+        }
       }
     }
   }
