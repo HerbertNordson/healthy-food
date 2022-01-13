@@ -17,6 +17,11 @@ export const Top = styled.div`
   @media (max-width: 1080px) {
     padding: 2em 0;
   }
+
+  @media (max-width: 780px) {
+    padding: 1em;
+    width: 100%;
+  }
 `;
 
 export const Options = styled.div`

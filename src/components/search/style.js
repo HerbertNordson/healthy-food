@@ -12,9 +12,31 @@ export const Srch = styled.div`
 
   & h1 {
     font-size: 3.6em;
-    color: #1d164d;
     margin-bottom: 0.5em;
     letter-spacing: 2px;
+  }
+
+  @media (max-width: 1080px) {
+    margin-left: 3em;
+    bottom: 8em;
+    & h1 {
+      font-size: 2.6em;
+    }
+  }
+
+  @media (max-width: 780px) {
+    width: 100%;
+    margin-left: 0;
+    bottom: 0;
+    padding: 1em;
+
+    & h1 {
+      font-size: 2.6em;
+
+      & br {
+        display: none;
+      }
+    }
   }
 
   & form {
@@ -28,12 +50,31 @@ export const Srch = styled.div`
       border: 1px solid #1d164d;
       border-radius: 8px;
       margin-right: 1em;
+
+      &::placeholder {
+        color: #b4b4b4;
+      }
     }
     & button {
       width: 12%;
       border: 1px solid #badc58;
       border-radius: 8px;
       background: #badc58;
+    }
+
+    @media (max-width: 1080px) {
+      & input {
+        margin-right: 0.5em;
+      }
+      & button {
+        width: 15%;
+      }
+    }
+
+    @media (max-width: 780px) {
+      & button {
+        width: 18%;
+      }
     }
   }
 `;

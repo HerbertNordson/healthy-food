@@ -15,4 +15,10 @@ export const Container = styled.header`
   @media (max-width: 1080px) {
     min-height: 90vh;
   }
+
+  @media (max-width: 780px) {
+    min-height: 100vh;
+    background-position: top;
+    background-size: initial;
+  }
 `;
