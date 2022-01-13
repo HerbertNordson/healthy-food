@@ -16,4 +16,24 @@ export const Srch = styled.div`
     margin-bottom: 0.5em;
     letter-spacing: 2px;
   }
+
+  & form {
+    display: flex;
+    width: 100%;
+
+    & input {
+      width: 80%;
+      font-size: 1.2em;
+      padding: 1em;
+      border: 1px solid #1d164d;
+      border-radius: 8px;
+      margin-right: 1em;
+    }
+    & button {
+      width: 12%;
+      border: 1px solid #badc58;
+      border-radius: 8px;
+      background: #badc58;
+    }
+  }
 `;
