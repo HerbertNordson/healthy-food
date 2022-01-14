@@ -34,22 +34,8 @@ export const Member = styled.section`
       width: 100%;
       & > input {
         width: 65%;
-        font-size: 1.2em;
-        padding: 1em;
-        border: 1px solid #1d164d;
-        border-radius: 8px;
-        margin-right: 1em;
-
-        &::placeholder {
-          color: #b4b4b4;
-        }
       }
       & > button {
-        font-size: 1.2em;
-        color: #fff;
-        background: #badc58;
-        border-radius: 8px;
-        border: 2px solid #badc58;
         box-shadow: 3px 5px 5px 4px rgb(186 220 88 / 30%);
         padding: 0.8em 2em;
       }

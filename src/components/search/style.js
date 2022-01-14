@@ -29,7 +29,7 @@ export const Srch = styled.div`
     width: 100%;
     bottom: 0;
     padding: 1em;
-    margin-top: 40em;
+    margin-top: 48em;
     margin-left: 0;
 
     & h1 {
@@ -47,21 +47,9 @@ export const Srch = styled.div`
 
     & input {
       width: 80%;
-      font-size: 1.2em;
-      padding: 1em;
-      border: 1px solid #1d164d;
-      border-radius: 8px;
-      margin-right: 1em;
-
-      &::placeholder {
-        color: #b4b4b4;
-      }
     }
     & button {
       width: 12%;
-      border: 1px solid #badc58;
-      border-radius: 8px;
-      background: #badc58;
 
       & > img {
         width: 2em;

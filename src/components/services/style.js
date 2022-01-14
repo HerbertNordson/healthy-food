@@ -26,14 +26,9 @@ export const Container = styled.section`
       color: #bcbcbc;
       margin: 1.5em 0;
     }
-    & > a {
-      color: #fff;
+    & > button {
       padding: 0.8em 1.5em;
-      background: #badc58;
-      border-radius: 8px;
-      font-size: 1.2em;
       margin: 1em 0;
-      display: inline-block;
       box-shadow: 3px 5px 5px 4px rgb(186 220 88 / 30%);
     }
 

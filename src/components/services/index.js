@@ -20,7 +20,7 @@ const Services = () => {
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia.
         </p>
-        <a href="/">Know More</a>
+        <button>Know More</button>
       </div>
     </Container>
   );
