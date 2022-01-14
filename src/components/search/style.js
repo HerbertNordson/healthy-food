@@ -62,6 +62,10 @@ export const Srch = styled.div`
       border: 1px solid #badc58;
       border-radius: 8px;
       background: #badc58;
+
+      & > img {
+        width: 2em;
+      }
     }
 
     @media (max-width: 1080px) {

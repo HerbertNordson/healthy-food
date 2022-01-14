@@ -62,7 +62,7 @@ export const Member = styled.section`
 
     @media (max-width: 780px) {
       width: 100%;
-      margin-top: 15em;
+      margin-top: 20em;
       margin-left: 0;
       padding: 1em;
     }
