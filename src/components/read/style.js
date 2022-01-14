@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const ReadBlog = styled.section`
-  width: 90%;
-  margin: auto;
+  width: 100%;
   text-align: center;
   padding: 2em 0;
 

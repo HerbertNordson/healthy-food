@@ -1,13 +1,34 @@
 import { CardBase } from "./style";
 import image from "../../assets/images/blog_image_1.svg";
+import { useRef } from "react";
 
 const Card = () => {
+  const carousel = useRef(null);
+
+  function onHandleLeft(event) {
+    event.preventDefault();
+    if (carousel.current.offsetWidth < 780) {
+      carousel.current.scrollLeft -= carousel.current.offsetWidth;
+      return;
+    }
+    carousel.current.scrollLeft = carousel.current.scrollLeft - 400;
+  }
+
+  function onHandleRight(event) {
+    event.preventDefault();
+    if (carousel.current.offsetWidth < 780) {
+      carousel.current.scrollLeft += carousel.current.offsetWidth;
+      return;
+    }
+    carousel.current.scrollLeft = carousel.current.scrollLeft + 400;
+  }
+
   return (
     <CardBase>
       <div className="previus">
-        <button> - </button>
+        <button onClick={onHandleLeft}> </button>
       </div>
-      <ul>
+      <ul className="carousel" ref={carousel}>
         <li>
           <article>
             <img src={image} alt="" />
@@ -100,7 +121,7 @@ const Card = () => {
         </li>
       </ul>
       <div className="next">
-        <button> - </button>
+        <button onClick={onHandleRight}> - </button>
       </div>
     </CardBase>
   );
