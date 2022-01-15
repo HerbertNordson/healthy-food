@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Footer from "../components/footer";
 import Register from "../pages/Register";
+import { Footer } from "../components/";
 
 function RoutesLink() {
   return (

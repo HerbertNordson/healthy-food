@@ -1,8 +1,4 @@
-import Header from "../components/header";
-import Best from "../components/best";
-import Services from "../components/services";
-import Read from "../components/read";
-import Membership from "../components/membership";
+import { Header, Best, Services, Read, Membership } from "../components";
 
 const Home = () => {
   return (

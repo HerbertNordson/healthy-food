@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Cookies from "universal-cookie";
 import { toast } from "react-toastify";
 
-import Menu from "../menu";
+import { Menu } from "..";
 import { Container, Input, Lgpd } from "./style";
 
 const FormReg = () => {
@@ -18,6 +18,7 @@ const FormReg = () => {
     cep: "",
   });
   const [fullDataForm, setFullDataForm] = useState([]);
+  const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
     if (fullDataForm.length !== 0) {
@@ -25,8 +26,10 @@ const FormReg = () => {
       cookies.set("Register", JSON.stringify(fullDataForm), {
         path: "/register",
       });
-
-      return window.location.reload();
+      toast.success("Cadastro efetuado com sucesso!");
+      setTimeout(() => {
+        return window.location.reload();
+      }, 5000);
     }
   }, [fullDataForm, cookies]);
 
@@ -142,11 +145,11 @@ const FormReg = () => {
     ev.preventDefault();
     let vl = Object.keys(isActive).filter((item) => item !== "");
 
-    if (vl.length === 8) {
+    if (vl.length === 7) {
       setFullDataForm((prev) => {
         return { ...prev, isActive };
       });
-      alert("Cadastro efetuado com sucesso!");
+      setIsValid(true);
       return;
     }
   }

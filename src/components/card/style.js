@@ -28,6 +28,11 @@ export const CardBase = styled.div`
 
     @media (max-width: 780px) {
       width: 4em;
+
+      & button {
+        width: 3.5em;
+        height: 3.5em;
+      }
     }
   }
   & > .previus {

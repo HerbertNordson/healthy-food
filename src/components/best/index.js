@@ -1,5 +1,5 @@
 import { OurBest } from "./style";
-import Eat from "../eats";
+import { Eat } from "..";
 
 const Best = () => {
   return (

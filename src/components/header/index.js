@@ -1,5 +1,4 @@
-import Menu from "../menu";
-import Search from "../search";
+import { Menu, Search } from "..";
 import { Container } from "./style";
 
 const Header = () => {
