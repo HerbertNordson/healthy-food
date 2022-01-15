@@ -17,12 +17,15 @@ export const Top = styled.div`
   & .menu-mob {
     display: none;
   }
+  & nav {
+    display: none;
+  }
 
   @media (max-width: 1080px) {
     padding: 2em 0;
   }
 
-  @media (max-width: 780px) {
+  @media (max-width: 1080px) {
     padding: 1em;
     width: 100%;
     position: fixed;
@@ -30,8 +33,11 @@ export const Top = styled.div`
     z-index: 999;
 
     & > a {
-      color: #fff;
       font-size: 1.6em;
+
+      @media (max-width: 780px) {
+        color: #fff;
+      }
     }
 
     & .menu-mob {
@@ -51,12 +57,18 @@ export const Top = styled.div`
     }
 
     & > nav {
+      display: block;
       width: 100%;
       height: auto;
       position: absolute;
-      top: 4.4em;
+      top: 6.4em;
       left: 0;
-      background: #92d362;
+      background: rgb(29, 22, 77, 0.9);
+
+      @media (max-width: 780px) {
+        top: 4.4em;
+        background: #92d362;
+      }
 
       & > ul {
         padding: 0;
@@ -98,14 +110,19 @@ export const Options = styled.div`
     &:hover {
       border-bottom: 2px solid #fff;
     }
+    &:nth-last-child(1):hover {
+      border-bottom: none;
+    }
   }
+
   & > .register {
     color: #badc58;
     background: #fff;
     border-radius: 8px;
     padding: 0.8em 1.5em;
   }
-  @media (max-width: 780px) {
+
+  @media (max-width: 1080px) {
     display: none;
   }
 `;

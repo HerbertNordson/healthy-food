@@ -6,12 +6,17 @@ export const Container = styled.section`
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(${join});
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   text-align: center;
+
+  @media (max-width: 1080px) {
+    padding-top: 6em;
+    min-height: 90vh;
+  }
 
   @media (max-width: 780px) {
     background: none;
@@ -60,14 +65,10 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 50vh;
+    min-height: 50vh;
 
     & > p {
       margin: 0.5em 0 1em;
-    }
-
-    & > input {
-      margin: 0.5em auto;
     }
 
     & > button {
@@ -76,9 +77,50 @@ export const Container = styled.section`
       margin: 1em auto 0;
     }
 
+    @media (max-width: 1080px) {
+      & input {
+        width: 45%;
+        margin: 0.5em auto;
+      }
+    }
+
     @media (max-width: 780px) {
       width: 100%;
       margin: 0;
+
+      & input {
+        width: 80%;
+        margin: 0.5em auto;
+      }
     }
+  }
+`;
+
+export const Input = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+
+  & > input {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 46%;
+  }
+`;
+
+export const Lgpd = styled.div`
+  display: flex;
+  align-items: center;
+  width: 47%;
+
+  span {
+    font-size: 0.8em;
+  }
+
+  @media (max-width: 780px) {
+    margin: auto;
+    width: 60%;
   }
 `;
