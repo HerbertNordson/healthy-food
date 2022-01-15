@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+#Bem-vindo ao meu repositório!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o 'Healthy Food'! Um projeto feito utilizando React-JS, que consistiu em desenvolver uma landing-page a partir de um layout elaborado por uma equipe de design. 
 
-## Available Scripts
+Ferramentas: 
+        ReactJS,
+        React-Toast,
+        React-Route,
+        React universal-cookie,
+        Styled-component
 
-In the project directory, you can run:
+Os objetivos deste desafio foram os seguintes: 
 
-### `npm start`
+        1- Desenvolver o site que está em anexo utilizando toda a estrutura do React, o site tem que ser 100% responsivo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+        2- Criar a tela de cadastro baseada na tela inicial, o cadastro precisa receber os dados abaixo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+          a. Nome
 
-### `npm test`
+          b. Data de nascimento
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+          c. CPF
 
-### `npm run build`
+          d. CEP
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+          i. Utilizar a API dos correios para preencher os demais campos que compõe o endereço.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+          e. Validação dos campos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+          f. Armazenar os dados do formulário no local storage e Cookies
 
-### `npm run eject`
+        3- Não precisa utilizar banco de dados.
+       
+Todas as etapas foram realizadas e testadas. Você pode conferir o resultado através deste link: http://healthy-food-js.s3-website-sa-east-1.amazonaws.com/, ou, basta clonar este repositório em seu local e executar o "npm start".
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Breve irei postar um vídeo apresentando o projeto a vocês! [aguardando autorização] 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Obrigado por chegar até aqui! 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deus abençoe ;)
