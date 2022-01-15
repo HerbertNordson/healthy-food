@@ -2,6 +2,13 @@
 
 Este é o 'Healthy Food'! Um projeto feito utilizando React-JS, que consistiu em desenvolver uma landing-page a partir de um layout elaborado por uma equipe de design. 
 
+Ferramentas: 
+ReactJS,
+React-Toast,
+React-Route,
+React universal-cookie,
+Styled-component
+
 Os objetivos deste desafio foram os seguintes: 
 
         1- Desenvolver o site que está em anexo utilizando toda a estrutura do React, o site tem que ser 100% responsivo.
