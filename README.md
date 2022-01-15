@@ -31,7 +31,7 @@ Os objetivos deste desafio foram os seguintes:
 
         3- Não precisa utilizar banco de dados.
        
-Todas as etapas foram realizadas e testadas. Você pode conferir o resultado através deste link: http://healthy-food-js.s3-website-sa-east-1.amazonaws.com/ [este é um repositório s3 stático. As ações de localStorage e Cookies, não estão sendo permitidas no momento], ou, basta clonar este repositório em seu local e executar o "npm start".
+Todas as etapas foram realizadas e testadas. Você pode conferir o resultado através deste link: http://healthy-food-js.s3-website-sa-east-1.amazonaws.com/, ou, basta clonar este repositório em seu local e executar o "npm start".
 
 Breve irei postar um vídeo apresentando o projeto a vocês! [aguardando autorização] 
 
