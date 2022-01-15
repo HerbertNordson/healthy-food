@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
+
 import Cookies from "universal-cookie";
-import { Container, Input, Lgpd } from "./style";
+import { toast } from "react-toastify";
+
 import Menu from "../menu";
+import { Container, Input, Lgpd } from "./style";
 
 const FormReg = () => {
   const cookies = new Cookies();
@@ -13,7 +16,6 @@ const FormReg = () => {
     name: "",
     dateBithDay: "",
     cep: "",
-    lgpd: false,
   });
   const [fullDataForm, setFullDataForm] = useState([]);
 
@@ -41,7 +43,7 @@ const FormReg = () => {
       });
       return;
     }
-    alert("Por favor insira um nome que possua mais de 3 caracteres!");
+    toast.warn("Por favor insira um nome que possua mais de 3 caracteres!");
     return;
   }
 
@@ -52,7 +54,7 @@ const FormReg = () => {
     let yearsValid = yearDate - valid;
 
     if (yearsValid < 18) {
-      alert("Você precisa ser maior de idade para concluir o cadastro!");
+      toast.warn("Você precisa ser maior de idade para concluir o cadastro!");
       return;
     } else {
       setIsActive((prevState) => {
@@ -85,6 +87,11 @@ const FormReg = () => {
             cep: res.cep,
           };
         });
+      })
+      .catch((error) => {
+        toast.warn(
+          "There has been a problem with your fetch operation: " + error.message
+        );
       });
   }
 
@@ -133,16 +140,13 @@ const FormReg = () => {
 
   function onHandlerSubmit(ev) {
     ev.preventDefault();
-    let vl = Object.keys(isActive).filter(
-      (item) => item !== "" && item !== false
-    );
+    let vl = Object.keys(isActive).filter((item) => item !== "");
 
     if (vl.length === 8) {
       setFullDataForm((prev) => {
         return { ...prev, isActive };
       });
       alert("Cadastro efetuado com sucesso!");
-
       return;
     }
   }

@@ -1,6 +1,6 @@
 import { Srch } from "./style";
 
-import lupa from "../../assets/images/lupa-de-detetive.svg";
+import { lupa_de_detetive } from "../../assets/images";
 
 const Search = () => {
   function onHandlerSubmit(event) {
@@ -16,7 +16,7 @@ const Search = () => {
       <form onSubmit={onHandlerSubmit}>
         <input type="text" placeholder="Search healthy recipes" />
         <button type="submit">
-          <img src={lupa} alt="" />
+          <img src={lupa_de_detetive} alt="" />
         </button>
       </form>
     </Srch>

@@ -80,7 +80,7 @@ export const CardBase = styled.div`
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
-    margin-left: 5%;
+    margin-left: 10%;
     padding: 0;
 
     @media (max-width: 780px) {
@@ -139,11 +139,11 @@ export const CardBase = styled.div`
         margin-top: 1em;
 
         & > div {
-          width: 4em;
-          height: 4em;
-          border: 1px solid;
+          width: 3.5em;
+          height: 3.5em;
           border-radius: 2em;
           margin-right: 1em;
+          overflow: hidden;
 
           & > img {
             width: 100%;
