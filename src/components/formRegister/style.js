@@ -28,7 +28,7 @@ export const Container = styled.section`
     right: 0;
     left: 0;
     width: 100%;
-    padding: 2em 7em;
+    padding: 1em 7em;
     background: rgb(29, 22, 77, 0.1);
 
     @media (max-width: 780px) {
