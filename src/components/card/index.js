@@ -18,24 +18,32 @@ const Blogs = [
     autor: "Kevin Ibrahim",
     image: blog_image_1,
     tb: man_1,
+    alt_image: "Quick-start guide to nuts and seeds",
+    alt_author: "Author Kevin Ibrahim",
   },
   {
     title: "Nutrition: Tips for Improving Your Health",
     autor: "Mikaela Jackson",
     image: blog_image_2,
     tb: woman_1,
+    alt_image: "Nutrition: Tips for Improving Your Health",
+    alt_author: "Authora Mikaela Jackson",
   },
   {
     title: "The top 10 benefits of eating healthy",
     autor: "Bryan McGregor",
     image: blog_image_3,
     tb: man_2,
+    alt_image: "The top 10 benefits of eating healthy",
+    alt_author: "Authora Bryan McGregor",
   },
   {
     title: "Cherry Cobbler on the Grill",
     autor: "Joseff Bauman",
     image: blog_image_4,
     tb: man_3,
+    alt_image: "Cherry Cobbler on the Grill",
+    alt_author: "Authora Joseff Bauman",
   },
 ];
 
@@ -69,12 +77,12 @@ const Card = () => {
         {Blogs.map((item, key) => (
           <li>
             <article>
-              <img src={item.image} alt="" />
+              <img src={item.image} alt={item.alt_image} />
               <div>
                 <h3>{item.title}</h3>
                 <footer>
                   <div>
-                    <img src={item.tb} alt="" />
+                    <img src={item.tb} alt={item.alt_author} />
                   </div>
                   <span>{item.autor}</span>
                 </footer>

@@ -22,7 +22,6 @@ const Menu = () => {
           Register
         </Link>
       </Options>
-
       <button className="menu-mob" onClick={onClick}>
         <span></span>
         <span></span>

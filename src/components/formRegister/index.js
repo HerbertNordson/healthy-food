@@ -18,7 +18,6 @@ const FormReg = () => {
     cep: "",
   });
   const [fullDataForm, setFullDataForm] = useState([]);
-  const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
     if (fullDataForm.length !== 0) {
@@ -149,7 +148,6 @@ const FormReg = () => {
       setFullDataForm((prev) => {
         return { ...prev, isActive };
       });
-      setIsValid(true);
       return;
     }
   }
