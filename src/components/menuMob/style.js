@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const Mob = styled.div`
-  & .menu-mob {
-    display: none;
-  }
-  & nav {
-    display: none;
-  }
+  display: none;
 
   @media (max-width: 1080px) {
+    display: block;
+
     & .menu-mob {
       display: block;
       background: none;
